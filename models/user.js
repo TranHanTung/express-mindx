@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://0.0.0.0:27017/mindx')
+mongoose.connect('mongodb+srv://mindx:1234@cluster0.cwhgngk.mongodb.net/mindx')
 
 const userSchema = new mongoose.Schema({
     username: String,
@@ -11,4 +11,4 @@ const userSchema = new mongoose.Schema({
 
 const userModel = mongoose.model('users', userSchema)
 
-module.exports = { userModel }
+module.exports = { userModel }  
